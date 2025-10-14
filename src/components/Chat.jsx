@@ -45,7 +45,6 @@ export default function Chat() {
     )
 
     setUsers(updatedUsers) // esto dispara el useEffect del contexto que guarda en localStorage
-
     setMsg("")
   }
 
@@ -64,19 +63,20 @@ export default function Chat() {
 
   return (
     <>
-      {
-        showPopup === true && <section className="cont-popup">
+      {showPopup === true && (
+        <section className="cont-popup">
           <div className="popup">
             <h2>Configuración de Chat</h2>
             <h3>Cambiar tema:</h3>
-            <select name="" id="">
+            <select>
               <option value="">Claro</option>
               <option value="">Oscuro</option>
-            </select><br></br>
+            </select><br />
             <button onClick={handleClosePopup}>Cerrar</button>
           </div>
         </section>
-      }
+      )}
+
       <div className="chat">
         <header className="chat-header">
           <div>
@@ -87,7 +87,9 @@ export default function Chat() {
                 className="chat-avatar"
               />
               <strong>{user.name}</strong>
-              {user.lastSeen !== "" && <span className="last-seen">Last seen: {user.lastSeen}</span>}
+              {user.lastSeen !== "" && (
+                <span className="last-seen">Last seen: {user.lastSeen}</span>
+              )}
             </div>
           </div>
 
@@ -111,7 +113,7 @@ export default function Chat() {
           <form onSubmit={handleSubmit}>
             <input
               type="text"
-              placeholder="Enter text here..."
+              placeholder="Escribe tu mensaje..."
               onChange={handleChange}
               value={msg}
             />
