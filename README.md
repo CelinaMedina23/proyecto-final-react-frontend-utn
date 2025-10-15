@@ -36,19 +36,19 @@ Este proyecto es una simulación básica de WhatsApp Web desarrollada con **Reac
 
 ## Estructura del Proyecto
 src/
-┣ components/
-┃ ┣ Chat.jsx
-┃ ┣ Sidebar.jsx
-┃ ┣ SettingsPopup.jsx
-┣ views/
-┃ ┣ Login.jsx
-┃ ┣ Messages.jsx
-┃ ┣ Help.jsx
-┃ ┣ NotFound.jsx
-┣ context/
-┃ ┗ ChatContext.jsx
-┣ router/
-┃ ┗ RouterApp.jsx
+ ->components/
+   --> Chat.jsx
+   --> Sidebar.jsx
+   --> SettingsPopup.jsx
+ -> views/
+   --> Login.jsx
+   --> Messages.jsx
+   --> Help.jsx
+   --> NotFound.jsx
+ -> context/
+   --> ChatContext.jsx
+ ->router/
+   --> RouterApp.jsx
 
 ## Mejoras Futuras
 
