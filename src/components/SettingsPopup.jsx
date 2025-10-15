@@ -69,8 +69,8 @@ const SettingsPopup = ({ onClose }) => {
           <li style={{ marginTop: "1rem" }}>
             <button
               onClick={() => {
-                localStorage.removeItem("user");
-                window.location.href = "/";
+                 localStorage.removeItem("isLoggedIn");
+                 window.location.href = "/"; 
               }}
               style={{
                 background: "none",
